@@ -13,16 +13,33 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/tan_background"
     android:orientation="vertical"
     tools:context="com.example.android.miwok.MainActivity">
 
-    <!-- Number Category-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--
+
+
+    -->
+    <!-- Number Category
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,9 +49,9 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_numbers" />
-    </FrameLayout>
+    </FrameLayout>-->
 
-    <!-- Family category-->
+    <!-- Family category
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,9 +61,9 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_family" />
-    </FrameLayout>
+    </FrameLayout>-->
 
-    <!-- Colors Category-->
+    <!-- Colors Category
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,9 +73,9 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_colors" />
-    </FrameLayout>
+    </FrameLayout>-->
 
-    <!-- Phrases category-->
+    <!-- Phrases category
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -68,5 +85,5 @@
             style="@style/CategoryStyle"
             android:background="?android:attr/selectableItemBackground"
             android:text="@string/category_phrases" />
-    </FrameLayout>
+    </FrameLayout>-->
 </LinearLayout>
